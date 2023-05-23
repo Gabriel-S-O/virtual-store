@@ -52,7 +52,11 @@ public class StateController {
         }
     }
     @GetMapping("/{id}")
-    public ResponseEntity<State> findById(@PathVariable("id") Long id) {
-        return ResponseEntity.ok(stateService.findById(id));
+    public ResponseEntity<Object> findById(@PathVariable("id") Long id) {
+        try {
+            return ResponseEntity.ok(stateService.findById(id));
+        } catch (Exception e) {
+            return ResponseEntity.status(HttpStatus.NOT_FOUND).body("Unable to find the state.");
+        }
     }
 }

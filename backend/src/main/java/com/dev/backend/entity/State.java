@@ -16,11 +16,9 @@ import lombok.Data;
 @Table(name = "state")
 @Data
 public class State {
-
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
-
     private String name;
     private String shortName;
     @Temporal(TemporalType.TIMESTAMP)
