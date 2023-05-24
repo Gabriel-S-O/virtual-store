@@ -12,13 +12,13 @@ import java.util.Date;
 public class Person {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    Long id;
-    String name;
-    String CPF;
-    String email;
-    String password;
-    String address;
-    String CEP;
-    Date creationDate;
-    Date updateDate;
+    private Long id;
+    private String name;
+    private String CPF;
+    private String email;
+    private String password;
+    private String address;
+    private String CEP;
+    private Date creationDate;
+    private Date updateDate;
 }

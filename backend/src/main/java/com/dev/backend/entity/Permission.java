@@ -12,8 +12,8 @@ import java.util.Date;
 public class Permission {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    Long id;
-    String name;
-    Date creationDate;
-    Date updateDate;
+    private Long id;
+    private String name;
+    private Date creationDate;
+    private Date updateDate;
 }

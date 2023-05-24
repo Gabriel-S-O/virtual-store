@@ -12,11 +12,11 @@ import java.util.Date;
 public class PersonPermission {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    Long id;
+    private Long id;
     @JoinColumn(name = "person_id")
-    Person person;
+    private Person person;
     @JoinColumn(name = "permission_id")
-    Permission permission;
-    Date creationDate;
-    Date updateDate;
+    private Permission permission;
+    private Date creationDate;
+    private Date updateDate;
 }
